@@ -40,7 +40,7 @@ void loop() {
 
     // Map pulse width to 0-255 duty cycle for analogWrite
     // Default Uno PWM period is ~4000us (490Hz) on pin 9
-    uint8_t duty = (uint8_t)constrain(map(pw, 0, 4000, 0, 255), 0, 255);
+    uint8_t duty = (uint8_t)constrain(map(pw, 0, 2000, 0, 255), 0, 255);
 
     analogWrite(OUTPUT_PIN, duty);
 
